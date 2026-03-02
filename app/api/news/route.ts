@@ -37,7 +37,6 @@ export async function GET(request: NextRequest) {
       headers: {
         'User-Agent': 'Global-Newsroom-Dashboard/1.0',
       },
-      next: { revalidate: 60 }, // Cache for 60 seconds
     });
 
     if (!response.ok) {
