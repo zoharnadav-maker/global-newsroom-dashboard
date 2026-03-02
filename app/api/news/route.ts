@@ -140,9 +140,7 @@ function generateMockNews(
   const categoryTitles = titles[category] || titles.general;
 
   return Array.from({ length: count }, (_, i) => ({
-    source: {
-      id: null,
-      name: sources[i % sources.length],
+    source: {      name: sources[i % sources.length],
     },
     author: 'Staff Reporter',
     title:
