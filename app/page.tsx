@@ -1,8 +1,8 @@
 'use client';
 
 import { useState, useEffect, useCallback } from 'react';
-import NewsCard from '@/components/NewsCard';
-import ArticleModal from '@/components/ArticleModal';
+import NewsCard from './components/NewsCard';
+import ArticleModal from './components/ArticleModal';
 import './page.css';
 
 const categories = [
