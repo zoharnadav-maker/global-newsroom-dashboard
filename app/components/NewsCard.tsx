@@ -14,6 +14,7 @@ interface Article {
 interface NewsCardProps {
   article: Article;
   onClick: () => void;
+    isLatest?: boolean;
 }
 
 export default function NewsCard({ article, onClick }: NewsCardProps) {
@@ -55,6 +56,7 @@ export default function NewsCard({ article, onClick }: NewsCardProps) {
         <div className="card-meta">
           <span className="source-badge">{article.source.name}</span>
           <span className="publish-date">{publishDate}</span>
+                  {isLatest && <span className="latest-badge">⭐ LATEST</span>}
         </div>
         <h3 className="card-title">{article.title}</h3>
         <p className="card-description">
