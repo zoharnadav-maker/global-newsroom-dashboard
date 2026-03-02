@@ -115,6 +115,7 @@ export default function Home() {
                 key={`${activeTab}-${index}`}
                 article={article}
                 onClick={() => setSelectedArticle(article)}
+                              isLatest={index < 3}
               />
             ))
           ) : (
