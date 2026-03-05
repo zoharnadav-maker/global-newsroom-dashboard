@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 
 const NEWS_API_KEY = process.env.NEWS_API_KEY || 'demo';
+// Configured to use real NewsAPI
 const NEWS_API_URL = 'https://newsapi.org/v2';
 
 const categoryMap: { [key: string]: string } = {
