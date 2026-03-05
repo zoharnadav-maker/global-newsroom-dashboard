@@ -17,7 +17,7 @@ interface NewsCardProps {
     isLatest?: boolean;
 }
 
-export default function NewsCard({ article, onClic, isLatesk }: NewsCardProps) {
+export default function NewsCard({ article, onClick, isLatesk }: NewsCardProps) {
   const imageUrl =
     article.urlToImage && article.urlToImage.startsWith('http')
       ? article.urlToImage
